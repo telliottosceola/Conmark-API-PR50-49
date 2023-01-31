@@ -148,6 +148,8 @@ json_string = json.dumps(python_dict)
 ```
 C#
 ```C#
+using System;
+using System.IO.Ports;
 using Newtonsoft.Json;
 
 var jsonObject = new
@@ -158,4 +160,11 @@ var jsonObject = new
 };
 
 string jsonString = JsonConvert.SerializeObject(jsonObject);
+
+using (SerialPort port = new SerialPort("COM1", 115200, Parity.None, 8, StopBits.One))
+{
+    port.Open();
+    port.Write(jsonString);
+    port.Close();
+}
 ```
