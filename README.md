@@ -5,6 +5,8 @@ All commands sent to the device will be USB micro interface on board.  This USB 
 This driver may need to be installed for the USB device to properly mount to the OS as a COM/Serial Port:
 https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers
 
+Serial port baud rate for the control software should be set to 115200
+
 Commands are in the format of JSON objects converted to strings and passed to the Serial/COM interface to the device.  The JSON object passed to the Serial/COM interface contains the operations the device should execute such as setting the 4 digital outputs high or low, setting the 4-20mA DAC output to a certain value, or reading the state of the 4 digital inputs.  The following JSON Key/Value pairs are used to execute these tasks.
 
 ## Controlling Outputs
