@@ -16,7 +16,7 @@ Set Output 1 High
 ``
 Set Output 1 Low
 ``
-"out_1":1
+"out_1":0
 ``
 #### Digital output 2
 Set Output 2 High
@@ -25,7 +25,7 @@ Set Output 2 High
 ``
 Set Output 2 Low
 ``
-"out_2":1
+"out_2":0
 ``
 #### Digital output 3
 Set Output 3 High
@@ -34,16 +34,17 @@ Set Output 3 High
 ``
 Set Output 3 Low
 ``
-"out_3":1
+"out_3":0
 ``
 #### Digital output 4
 Set Output 4 High
 ``
 "out_4":1
 ``
+
 Set Output 4 Low
 ``
-"out_4":1
+"out_4":0
 ``
 #### Analog output 1
 Set Analog Output 1 to 4 mA
