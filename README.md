@@ -168,6 +168,7 @@ using (SerialPort port = new SerialPort("COM1", 115200, Parity.None, 8, StopBits
     port.Close();
 }
 ```
+Visual Basic .NET
 
 ```.NET
 Imports System
