@@ -168,3 +168,27 @@ using (SerialPort port = new SerialPort("COM1", 115200, Parity.None, 8, StopBits
     port.Close();
 }
 ```
+
+```.NET
+Imports System
+Imports System.IO.Ports
+Imports Newtonsoft.Json
+
+Dim jsonObject = New With {
+  Key .Out_1 = 1,
+  Key .Analog_1 = 12.00,
+  Key .Get_state = True
+}
+
+Dim jsonString As String = JsonConvert.SerializeObject(jsonObject)
+
+Using port As New SerialPort("COM1", 115200, Parity.None, 8, StopBits.One)
+    port.Open()
+    port.Write(jsonString)
+
+    Dim response As String = port.ReadLine()
+    Console.WriteLine("Response: " & response)
+
+    port.Close()
+End Using
+```
