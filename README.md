@@ -98,7 +98,7 @@ Set Analog Output 2 to 20 mA
 ## Reading Inputs and status of outputs
 To read the status of the 4 on board digital inputs simply pass the following key value pair to the serial port:
 ``
-"get_state":true
+{"get_state":true}
 ``
 The device will respond with the status of all outputs as well as the status of the 4 digital inputs.  This is an example response:
 ``
