@@ -16,13 +16,13 @@ Commands are in the format of JSON objects converted to strings and passed to th
 Set Output 1 High
 
 ``
-"out_1":1
+{"out_1":1}
 ``
 
 Set Output 1 Low
 
 ``
-"out_1":0
+{"out_1":0}
 ``
 
 #### Digital output 2
@@ -30,13 +30,13 @@ Set Output 1 Low
 Set Output 2 High
 
 ``
-"out_2":1
+{"out_2":1}
 ``
 
 Set Output 2 Low
 
 ``
-"out_2":0
+{"out_2":0}
 ``
 
 #### Digital output 3
@@ -44,13 +44,13 @@ Set Output 2 Low
 Set Output 3 High
 
 ``
-"out_3":1
+{"out_3":1}
 ``
 
 Set Output 3 Low
 
 ``
-"out_3":0
+{"out_3":0}
 ``
 
 #### Digital output 4
@@ -58,13 +58,13 @@ Set Output 3 Low
 Set Output 4 High
 
 ``
-"out_4":1
+{"out_4":1}
 ``
 
 Set Output 4 Low
 
 ``
-"out_4":0
+{"out_4":0}
 ``
 
 #### Analog output 1
@@ -72,13 +72,13 @@ Set Output 4 Low
 Set Analog Output 1 to 4 mA
 
 ``
-"analog_1":4.00
+{"analog_1":4.00}
 ``
 
 Set Analog Output 1 to 20 mA
 
 ``
-"analog_1":20.00
+{"analog_1":20.00}
 ``
 
 #### Analog output 2
@@ -86,13 +86,13 @@ Set Analog Output 1 to 20 mA
 Set Analog Output 2 to 4 mA
 
 ``
-"analog_2":4.00
+{"analog_2":4.00}
 ``
 
 Set Analog Output 2 to 20 mA
 
 ``
-"analog_2":20.00
+{"analog_2":20.00}
 ``
 
 ## Reading Inputs and status of outputs
